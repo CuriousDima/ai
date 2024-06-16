@@ -236,10 +236,15 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-# Ruby
-Gemfile.lock
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# Hugo
+.hugo_build.lock
+/blog/public/
+/blog/resources/
+/blog/resources/_gen/
+hugo.darwin
+hugo.linux
+hugo.log
+hugo_stats.json
+.hugo_build.lock
+/assets/jsconfig.json
+/node_modules/
