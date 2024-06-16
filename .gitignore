@@ -238,13 +238,12 @@ pyrightconfig.json
 
 # Hugo
 .hugo_build.lock
+/blog/assets/jsconfig.json
+/blog/node_modules/
 /blog/public/
 /blog/resources/
 /blog/resources/_gen/
+hugo_stats.json
 hugo.darwin
 hugo.linux
 hugo.log
-hugo_stats.json
-.hugo_build.lock
-/assets/jsconfig.json
-/node_modules/
