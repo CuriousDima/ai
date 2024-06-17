@@ -1,2 +1,5 @@
-# artificial-intelligence
-Learning Artificial Intelligence
+# AI Robotics
+
+I've created this repository to showcase my small projects, assignments, and other interesting developments as I teach myself AI and Robotics. 
+
+Additionally, I'm documenting my journey here: [curiousdima.github.io/ai](https://curiousdima.github.io/ai/)
