@@ -193,4 +193,4 @@ if uploaded_file is not None:
     print_probabilities(probs, _LABELS)
 
 st.markdown("---")
-st.write(f"We know only 120 breeds: {", ".join(_LABELS).replace("_", " ").title()}.")
+st.write(f"We know only 120 breeds: {', '.join(_LABELS).replace('_', ' ').title()}.")
