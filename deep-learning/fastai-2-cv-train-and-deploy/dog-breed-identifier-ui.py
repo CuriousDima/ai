@@ -158,16 +158,16 @@ def print_probabilities(probs, labels, top_n=10):
 
 st.title("Dog Breed Recognition")
 
-st.write("Some doggies for your inspiration")
-d1, d2, d3, d4 = st.columns(4)
-with d1:
-    st.image("0a54ce47525781f2caa66f65291dddf8.jpg")
-with d2:
-    st.image("0a59d3205cff15e31ee30213b9988e7e.jpg")
-with d3:
-    st.image("0ab808aa3571846e50ed74a204662c52.jpg")
-with d4:
-    st.image("0c0b3758c1b177b2a2961c1483159898.jpg")
+# st.write("Some doggies for your inspiration")
+# d1, d2, d3, d4 = st.columns(4)
+# with d1:
+#     st.image("0a54ce47525781f2caa66f65291dddf8.jpg")
+# with d2:
+#     st.image("0a59d3205cff15e31ee30213b9988e7e.jpg")
+# with d3:
+#     st.image("0ab808aa3571846e50ed74a204662c52.jpg")
+# with d4:
+#     st.image("0c0b3758c1b177b2a2961c1483159898.jpg")
 
 
 uploaded_file = st.file_uploader("Upload a doggy...", type=["jpg", "jpeg"])
