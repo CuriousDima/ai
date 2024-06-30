@@ -92,6 +92,7 @@ spacy-loggers==1.0.5
 srsly==2.4.8
 stack-data==0.6.3
 streamlit==1.36.0
+streamlit-js-eval==0.1.7
 sympy==1.12.1
 tenacity==8.4.2
 thinc==8.2.5
