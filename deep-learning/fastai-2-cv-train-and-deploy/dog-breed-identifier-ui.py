@@ -1,13 +1,12 @@
 from copy import deepcopy
 
 from fastai.vision.all import *
+from huggingface_hub import from_pretrained_fastai
 from PIL import Image
-import pandas as pd
+from streamlit_js_eval import get_page_location
 import streamlit as st
 
 
-_LABELS_FILE = "training-labels.csv"
-_MODEL_FILE = "dog-breed-identification-export_error-rate-0_118.pkl"
 _LABELS = (
     "affenpinscher",
     "afghan_hound",
@@ -132,15 +131,13 @@ _LABELS = (
 )
 
 
-@st.cache_resource
 def get_breed(path):
-    labels = pd.read_csv(_LABELS_FILE)
-    return labels[labels["id"] == str(path.name).split(".")[-2]].iloc[0]["breed"]
+    pass
 
 
 @st.cache_resource
 def get_predictor():
-    return load_learner(_MODEL_FILE)
+    return from_pretrained_fastai("TheDima/resnet50-dog-breed-identification")
 
 
 def predict(image):
@@ -158,16 +155,19 @@ def print_probabilities(probs, labels, top_n=10):
 
 st.title("Dog Breed Recognition")
 
+url = get_page_location()
+image_prefix = url["protocol"] + "//" + url["host"]
+
 st.write("Some doggies for your inspiration")
 d1, d2, d3, d4 = st.columns(4)
 with d1:
-    st.image("images/0a54ce47525781f2caa66f65291dddf8.jpg")
+    st.image(f"{image_prefix}/app/static/0a54ce47525781f2caa66f65291dddf8.jpg")
 with d2:
-    st.image("images/0a59d3205cff15e31ee30213b9988e7e.jpg")
+    st.image(f"{image_prefix}/app/static/0a59d3205cff15e31ee30213b9988e7e.jpg")
 with d3:
-    st.image("images/0ab808aa3571846e50ed74a204662c52.jpg")
+    st.image(f"{image_prefix}/app/static/0ab808aa3571846e50ed74a204662c52.jpg")
 with d4:
-    st.image("images/0c0b3758c1b177b2a2961c1483159898.jpg")
+    st.image(f"{image_prefix}/app/static/0c0b3758c1b177b2a2961c1483159898.jpg")
 
 
 uploaded_file = st.file_uploader("Upload a doggy...", type=["jpg", "jpeg"])
