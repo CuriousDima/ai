@@ -4,6 +4,7 @@ from fastai.vision.all import *
 from huggingface_hub import from_pretrained_fastai
 from PIL import Image
 from streamlit_js_eval import get_page_location
+import pandas as pd
 import streamlit as st
 
 
@@ -161,13 +162,13 @@ image_prefix = url["protocol"] + "//" + url["host"]
 st.write("Some doggies for your inspiration")
 d1, d2, d3, d4 = st.columns(4)
 with d1:
-    st.image(f"{image_prefix}/app/static/0a54ce47525781f2caa66f65291dddf8.jpg")
+    st.image("static/0a54ce47525781f2caa66f65291dddf8.jpg")
 with d2:
-    st.image(f"{image_prefix}/app/static/0a59d3205cff15e31ee30213b9988e7e.jpg")
+    st.image("static/0a59d3205cff15e31ee30213b9988e7e.jpg")
 with d3:
-    st.image(f"{image_prefix}/app/static/0ab808aa3571846e50ed74a204662c52.jpg")
+    st.image("static/0ab808aa3571846e50ed74a204662c52.jpg")
 with d4:
-    st.image(f"{image_prefix}/app/static/0c0b3758c1b177b2a2961c1483159898.jpg")
+    st.image("static/0c0b3758c1b177b2a2961c1483159898.jpg")
 
 
 uploaded_file = st.file_uploader("Upload a doggy...", type=["jpg", "jpeg"])
