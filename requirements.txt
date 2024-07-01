@@ -28,6 +28,7 @@ fonttools==4.53.0
 fsspec==2024.6.1
 gitdb==4.0.11
 GitPython==3.1.43
+huggingface-hub==0.23.4
 idna==3.7
 ipykernel==6.29.4
 ipython==8.23.0
@@ -91,6 +92,7 @@ spacy-loggers==1.0.5
 srsly==2.4.8
 stack-data==0.6.3
 streamlit==1.36.0
+streamlit-js-eval==0.1.7
 sympy==1.12.1
 tenacity==8.4.2
 thinc==8.2.5
