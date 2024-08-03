@@ -1,0 +1,2 @@
+- Course: Linear Algebra for Machine Learning and Data Science
+- Course link: https://www.coursera.org/learn/machine-learning-linear-algebra/home/welcome
