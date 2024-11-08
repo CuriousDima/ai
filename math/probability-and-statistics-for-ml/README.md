@@ -1,0 +1,2 @@
+- Course: Probability & Statistics for Machine Learning & Data Science
+- Course link: [https://www.coursera.org/learn/machine-learning-probability-and-statistics](https://www.coursera.org/learn/machine-learning-probability-and-statistics/home/welcome)
