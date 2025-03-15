@@ -4,7 +4,7 @@ date = 2024-07-22T17:02:11-07:00
 draft = false
 +++
 
-As a software engineer with a background in large-scale distributed systems, I've consistently struggled to create user-friendly interfaces for my projects. In fact, I've found myself relying more heavily on Linux command-line tools rather than their desktop alternative: {{< twitter user="CuriousDima" id="1813777685111619711" >}}
+As a software engineer with a background in large-scale distributed systems, I've consistently struggled to create user-friendly interfaces for my projects. In fact, I've found myself relying more heavily on Linux command-line tools rather than their desktop alternative.
 
 However, I clearly understand the importance of providing users with a simple and straightforward way to use my scripts, apps, or models. It's important to present my work to friends, hackathon judges, or strangers online with a nice user experience. Dozens of pages of documentation can't replace a few intuitive forms and buttons, even though I've tried to convince myself otherwise. While some things are inherently complex, as a single engineer looking to share my pet project with the world, I sometimes can create a simple, user-friendly way to interact with my work.
 
