@@ -13,6 +13,7 @@ dependencies = [
     "jupyterlab>=4.4.2",
     "protobuf>=6.31.1",
     "ruff>=0.11.9",
+    "sentence-transformers>=5.0.0",
     "torch>=2.7.0",
     "torchvision>=0.22.0",
     "transformers>=4.51.3",
