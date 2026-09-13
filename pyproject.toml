@@ -3,9 +3,11 @@ name = "ai"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "accelerate>=1.12.0",
+    "bertopic>=0.17.4",
+    "cuml-cu13==26.8",
     "datasets>=3.6.0",
     "diffuser>=0.0.1",
     "diffusers>=0.36.0",
@@ -20,6 +22,7 @@ dependencies = [
     "jupyterlab-spellchecker>=0.8.4",
     "librosa>=0.11.0",
     "open-clip-torch>=3.2.0",
+    "plotly>=7.0.0",
     "protobuf>=6.31.1",
     "ruff>=0.11.9",
     "seaborn>=0.13.2",
@@ -29,5 +32,6 @@ dependencies = [
     "torch>=2.7.0",
     "torchvision>=0.22.0",
     "transformers>=4.51.3",
+    "umap-learn>=0.5.12",
     "yt-dlp>=2025.7.21",
 ]
