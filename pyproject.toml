@@ -7,6 +7,7 @@ requires-python = ">=3.11"
 dependencies = [
     "accelerate>=1.12.0",
     "bertopic>=0.17.4",
+    "causal-conv1d>=1.7.0",
     "cuml-cu13==26.8",
     "datasets>=3.6.0",
     "diffuser>=0.0.1",
@@ -15,15 +16,20 @@ dependencies = [
     "einops>=0.8.2",
     "fastai>=2.1.10",
     "fastbook>=0.0.16",
+    "gptqmodel>=7.5.0",
     "imageio>=2.37.3",
     "ipywidgets>=8.1.7",
     "jax>=0.6.2",
     "jupyterlab>=4.4.2",
     "jupyterlab-spellchecker>=0.8.4",
     "librosa>=0.11.0",
+    "mteb>=2.21.8",
+    "nvidia-modelopt[all]>=0.47.0",
     "open-clip-torch>=3.2.0",
+    "pillow>=12.3.0",
     "plotly>=7.0.0",
     "protobuf>=6.31.1",
+    "quanto>=0.2.0",
     "ruff>=0.11.9",
     "seaborn>=0.13.2",
     "sentence-transformers>=5.0.0",
@@ -35,3 +41,10 @@ dependencies = [
     "umap-learn>=0.5.12",
     "yt-dlp>=2025.7.21",
 ]
+
+[tool.uv.sources]
+diffusers = { git = "https://github.com/huggingface/diffusers" }
+
+# causal-conv1d compiles a CUDA extension that must match the installed torch
+[tool.uv.extra-build-dependencies]
+causal-conv1d = [{ requirement = "torch", match-runtime = true }, "ninja"]

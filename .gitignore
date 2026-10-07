@@ -247,3 +247,8 @@ hugo_stats.json
 hugo.darwin
 hugo.linux
 hugo.log
+
+# Output models
+ml-systems/data/base_embedding_after_on_cross_encoder_classification/
+ml-systems/out/
+inference/out/
